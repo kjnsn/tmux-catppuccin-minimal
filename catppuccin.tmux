@@ -29,6 +29,10 @@ main() {
   # active window title colors
   tmux set-window-option -g window-status-current-style fg=$crust,bg=$mauve
 
+  # window status format
+  tmux set-window-option -g window-status-format " #I #W "
+  tmux set-window-option -g window-status-current-format " #I #W "
+
   # pane border
   tmux set-option -g pane-border-style fg=$lavender
   tmux set-option -g pane-active-border-style fg=$mauve
