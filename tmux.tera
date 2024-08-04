@@ -1,0 +1,36 @@
+---
+whiskers:
+  version: "2.4.0"
+  matrix:
+    - flavor
+  filename: "themes/catppuccin_{{flavor.identifier}}.sh"
+---
+{%- set palette = flavor.colors -%}
+#!/usr/bin/env bash
+
+# --> Catppuccin ({{ flavor.identifier | capitalize }})
+# Base colors
+background="#{{ palette.base.hex | lower }}"
+foreground="#{{ palette.text.hex | lower }}"
+
+rosewater="#{{ palette.rosewater.hex | lower }}"
+flamingo="#{{ palette.flamingo.hex | lower }}"
+pink="#{{ palette.pink.hex | lower }}"
+mauve="#{{ palette.mauve.hex | lower }}"
+red="#{{ palette.red.hex | lower }}"
+maroon="#{{ palette.maroon.hex | lower }}"
+peach="#{{ palette.peach.hex | lower }}"
+yellow="#{{ palette.yellow.hex | lower }}"
+green="#{{ palette.green.hex | lower }}"
+teal="#{{ palette.teal.hex | lower }}"
+sky="#{{ palette.sky.hex | lower }}"
+sapphire="#{{ palette.sapphire.hex | lower }}"
+blue="#{{ palette.blue.hex | lower }}"
+lavender="#{{ palette.lavender.hex | lower }}"
+
+surface0="#{{ palette.surface0.hex | lower }}"
+surface1="#{{ palette.surface1.hex | lower }}"
+surface2="#{{ palette.surface2.hex | lower }}"
+
+mantle="#{{ palette.mantle.hex | lower }}"
+crust="#{{ palette.crust.hex | lower }}"
